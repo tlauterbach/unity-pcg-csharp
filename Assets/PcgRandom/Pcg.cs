@@ -132,6 +132,13 @@ namespace PcgRandom {
 		}
 
 		/// <summary>
+		/// Generates a random boolean value
+		/// </summary>
+		public bool Boolean() {
+			return Range32(2) == 0;
+		}
+
+		/// <summary>
 		/// Returns a <see cref="System.String"/> that represents the current <see cref="PcgRandom.Pcg"/>.
 		/// </summary>
 		/// <returns>A <see cref="System.String"/> that represents the current <see cref="PcgRandom.Pcg"/>.</returns>
