@@ -41,7 +41,7 @@ namespace PcgRandom {
 		/// <strong>FOR TESTING</strong> with a <strong>KNOWN</strong> seed.
 		/// </summary>
 		public Pcg() {
-			Seed(0x853c49e6748fea9bULL, 0xda3e39cb94b95bdbULL);
+			Seed(0x853c49e6748fea9bUL, 0xda3e39cb94b95bdbUL);
 		}
 
 		/// <summary>
@@ -73,7 +73,7 @@ namespace PcgRandom {
 		/// </summary>
 		public uint Random32() {
 			ulong oldState = m_state;
-			m_state = oldState * 6364136223846793005ULL + m_inc;
+			m_state = oldState * 6364136223846793005UL + m_inc;
 			uint xorShifted = (uint)(((oldState >> 18) ^ oldState) >> 27);
 			int rot = (int)(oldState >> 59);
 			return (xorShifted >> rot) | (xorShifted << ((-rot) & 31));
