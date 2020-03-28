@@ -1,0 +1,22 @@
+{
+	"name" : "com.potatointeractive.pcg",
+	"version" : "1.0.0",
+	"displayName" : "PcgRandom",
+	"description" : "C# implementation of the PCG randomization scheme.",
+	"unity" : "2018.3",
+	"type" : "tool",
+	"dependencies" : {
+
+	},
+	"keywords" : [
+		"PCG",
+		"randomizer",
+		"randomization",
+		"random"
+	],
+	"author" : {
+		"name" : "Terra Lauterbach",
+		"email" : "potatointeractive@gmail.com",
+		"url" : "https://rottentater.com/"
+	}
+}
