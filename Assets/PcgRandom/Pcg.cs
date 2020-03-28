@@ -1,6 +1,7 @@
 ﻿/*
  * PCG Random Number Generation for C#.
  *
+ * Copyright 2020 Terra Lauterbach <potatointeractive@gmail.com>
  * Copyright 2015 Kevin Harris <kevin@studiotectorum.com>
  * Copyright 2014 Melissa O'Neill <oneill@pcg-random.org>
  * 
@@ -27,13 +28,13 @@ namespace PcgRandom {
 		/// <summary>
 		/// The RNG state. All values are possible.
 		/// </summary>
-		ulong m_state;
+		protected ulong m_state;
 
 		/// <summary>
 		/// Controls which RNG sequence (stream) is selected.
 		/// Must <strong>always</strong> be odd.
 		/// </summary>
-		ulong m_inc;
+		protected ulong m_inc;
 		#endregion
 
 		/// <summary>
