@@ -1,6 +1,6 @@
 {
 	"name" : "com.potatointeractive.pcg",
-	"version" : "1.0.0",
+	"version" : "1.1.0",
 	"displayName" : "PcgRandom",
 	"description" : "C# implementation of the PCG randomization scheme.",
 	"unity" : "2018.3",
