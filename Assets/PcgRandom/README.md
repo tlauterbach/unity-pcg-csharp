@@ -7,29 +7,29 @@ A C# version of the [PCG random number generator](http://www.pcg-random.org/). C
 |-----|-----|-----|
 | com.potatointeractive.pcg | 1.2.0 | 2018.3 or newer |
 
-## Extensions
+# Extensions
 
-### Shuffle
+## Shuffle
 ```csharp
 namespace PcgRandom {
-	public static Extensions {
-		public static void Pcg.Shuffle<T>(this T[] array, Pcg randomizer);
-		public static void Pcg.Shuffle<T>(this IList<T> list, Pcg randomizer);
-	}
+    public static Extensions {
+        public static void Pcg.Shuffle<T>(this T[] array, Pcg randomizer);
+        public static void Pcg.Shuffle<T>(this IList<T> list, Pcg randomizer);
+    }
 }
 ```
 The `Shuffle` extension function lets you randomize the order of the elements within an `IList<T>` or `Array` instance using the given `Pcg` instance. 
 
-#### Exceptions
+### Exceptions
 - **ArgumentNullException** : thrown if the given `Pcg` instance is `null`, as it is required to execute the `Shuffle` behaviour.  
 
-#### Usage Example
+### Usage Example
 ```csharp
 // The  parameterless Pcg constructor uses a constant, default seed
 // We are using it show that Shuffle produces a consistent result
 Pcg randomizer = new Pcg(); 
 List<int> list = new List<int>() {
-	8, 3, -2, 39, 1290, 199, -29, 55, 1, 0
+    8, 3, -2, 39, 1290, 199, -29, 55, 1, 0
 };
 Debug.LogFormat(list[0], "`{0}'"); // prints `8'
 
