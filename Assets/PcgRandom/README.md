@@ -4,8 +4,8 @@
 A C# version of the [PCG random number generator](http://www.pcg-random.org/). Currently implements the [Minimal C Edition](https://github.com/imneme/pcg-c-basic) with the addition of a non-zero bounded range.
 
 | Package Name | Package Version | Unity Version |
-|-----|-----|-----|
-| com.potatointeractive.pcg | 1.2.0 | 2018.3 or newer |
+| ----- | ----- | ----- |
+| com.potatointeractive.pcg | 1.1.0 | 2018.3 or newer |
 
 # Extensions
 
@@ -31,11 +31,11 @@ Pcg randomizer = new Pcg();
 List<int> list = new List<int>() {
     8, 3, -2, 39, 1290, 199, -29, 55, 1, 0
 };
-Debug.LogFormat(list[0], "`{0}'"); // prints `8'
+Debug.LogFormat("`{0}'", list[0]); // prints `8'
 
 list.Shuffle(randomizer);
 
-Debug.LogFormat(list[0], "`{0}'"); // prints `-29'
+Debug.LogFormat("`{0}'", list[0]); // prints `-29'
 
 // elements shuffled to be in this order: 
 // -29, 3, -2, 199, 55, 8, 0, 1, 39, 1290

@@ -17,10 +17,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.0] - 2020-03-30
 ### Added
-- `Boolean` function that returns a random boolean
-- OpenUPM version banner added to README.md 
+- `Boolean` function to `Pcg` class that returns a random boolean
+- OpenUPM version banner added to `README.md` 
 - collection extension functions: `Shuffle`, `Choose`, `Take`
-- test scene and Test.cs script (repository only)
+- test scene and `Test.cs` script (repository only)
 
 ### Changed
 - reorganized code files into `Scripts` directory
@@ -35,4 +35,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - moved `Pcg.cs` to `Assets/PcgRandom` directory for package use
 - removed trailing 'L' from unsigned-long integer definitions that caused compile errors
-- exposed m_state and m_inc as protected members for inherited manipulation
+- exposed `m_state` and `m_inc` as protected members for inherited manipulation
