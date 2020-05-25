@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - OpenUPM version banner added to README.md 
 - collection extension functions: `Shuffle`, `Choose`, `Take`
 - test scene and Test.cs script (repository only)
+- `.editorconfig` file to standardize tab size 4 format
 
 ### Changed
 - reorganized code files into `/Scripts`
