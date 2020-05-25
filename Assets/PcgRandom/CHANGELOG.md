@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `ArgumentNullException` to extension methods when the given `Pcg` argument is null
 - Asserts in `Test.cs` Awake function to ensure that the `Shuffle` extension produces consistent results
 - expanding documentation within `README.md`
+- `.editorconfig` file to enforce tab size 4 in `*.cs` files
 
 ### Changed
 - swapped `List<T>` in Extension methods in favor of interface version `IList<T>`
@@ -20,12 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Boolean` function to `Pcg` class that returns a random boolean
 - OpenUPM version banner added to `README.md` 
 - collection extension functions: `Shuffle`, `Choose`, `Take`
-<<<<<<< HEAD
-- test scene and Test.cs script (repository only)
-- `.editorconfig` file to standardize tab size 4 format
-=======
 - test scene and `Test.cs` script (repository only)
->>>>>>> 110500bf3e6823bb5fa2153921e69a8ceb848acd
 
 ### Changed
 - reorganized code files into `Scripts` directory
