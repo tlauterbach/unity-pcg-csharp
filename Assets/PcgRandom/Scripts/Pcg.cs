@@ -1,7 +1,7 @@
 ﻿/*
  * PCG Random Number Generation for C#.
  *
- * Copyright 2020 Terra Lauterbach <potatointeractive@gmail.com>
+ * Copyright 2020-2021 Terra Lauterbach <potatointeractive@gmail.com>
  * Copyright 2015 Kevin Harris <kevin@studiotectorum.com>
  * Copyright 2014 Melissa O'Neill <oneill@pcg-random.org>
  * 
@@ -134,8 +134,23 @@ namespace PcgRandom {
 		/// <summary>
 		/// Generates a random boolean value
 		/// </summary>
-		public bool Boolean() {
+		public bool RandomBoolean() {
 			return Range32(2) == 0;
+		}
+
+		/// <summary>
+		/// Generates a float between 0.0 (inclusive) and 1.0 (inclusive)
+		/// </summary>
+		public float RandomFloat() {
+			return Random32() / (float)uint.MaxValue; 
+		}
+
+		/// <summary>
+		/// Generates a float between the given inclusive min 
+		/// and exclusive max
+		/// </summary>
+		public float RangeFloat(float inclusiveMin, float exclusiveMax) {
+			return inclusiveMin + Random32() / (uint.MaxValue / (exclusiveMax - inclusiveMin));
 		}
 
 		/// <summary>

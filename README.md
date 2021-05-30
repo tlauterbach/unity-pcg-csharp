@@ -1,11 +1,11 @@
 # unity-pcg-csharp
 [![openupm](https://img.shields.io/npm/v/com.potatointeractive.pcg?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.potatointeractive.pcg/)
 
-A C# version of the [PCG random number generator](http://www.pcg-random.org/). Currently implements the [Minimal C Edition](https://github.com/imneme/pcg-c-basic) with the addition of a non-zero bounded range.
+A C# version of the [PCG random number generator](http://www.pcg-random.org/). Currently implements the [Minimal C Edition](https://github.com/imneme/pcg-c-basic) with the addition of a non-zero bounded range, boolean, random float, and float range.
 
 | Package Name | Package Version | Unity Version |
 | ----- | ----- | ----- |
-| com.potatointeractive.pcg | 1.1.0 | 2018.3 or newer |
+| com.potatointeractive.pcg | 1.2.0 | 2018.3 or newer |
 
 # Extensions
 

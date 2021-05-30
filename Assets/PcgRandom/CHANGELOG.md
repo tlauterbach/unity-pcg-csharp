@@ -4,8 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.2.0] - 2021-05-30
 ### Added
+- `RandomFloat` and `FloatRange` functions
 - missing license header in `Extensions.cs`
 - `InvalidOperationException` to extension methods when given collection has no elements or a length of zero
 - `ArgumentNullException` to extension methods when the given `Pcg` argument is null
